@@ -4,7 +4,7 @@ module testbench();
 	
   reg clk;
   
-  //Clk Definition
+  //CLK Definition
   localparam clk_period = 10; //ns
   
   initial #(clk_period/2) clk = 1;

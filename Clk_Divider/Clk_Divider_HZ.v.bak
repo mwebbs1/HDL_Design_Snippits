@@ -1,12 +1,12 @@
-module Clk_Divider_HZ
-    #(  parameter CLK_SPEED_HZ,        // Native Clock Speed
-        parameter TARGET_SPEED_HZ      // New Clock Speed, must be whole number factor of CLK_SPEED_HZ
+module Clk_Divider_FPS
+    #(  parameter CLK_SPEED_HZ      = 25_000_000, // Native Clock Speed
+        parameter TARGET_SPEED_HZ   = 1_000       // New Clock Speed
     )        
     (   input clk,
         output pulse
     );
     
-    localparam countMax = CLK_SPEED_HZ/TARGET_SPEED_HZ;
+    localparam countMax = 100_000_000;
     localparam countSize = $clog2(countMax);
 	reg [countSize:0]count = 0;
     

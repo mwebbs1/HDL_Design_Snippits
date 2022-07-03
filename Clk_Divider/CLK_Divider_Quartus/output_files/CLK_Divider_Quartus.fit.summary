@@ -1,0 +1,11 @@
+Fitter Status : Successful - Sun Jul 03 18:43:50 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : CLK_Divider_Quartus
+Top-level Entity Name : Clk_Divider_Top
+Family : MAX II
+Device : EPM240F100C4
+Timing Models : Final
+Total logic elements : 4 / 240 ( 2 % )
+Total pins : 2 / 80 ( 3 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
