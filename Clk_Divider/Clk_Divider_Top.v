@@ -21,7 +21,7 @@ Clk_Divider #(
 );
 
 Clk_Divider_FPS #(
-    .CLK_SPEED_HZ(10_000_000),
+    .CLK_SPEED_HZ(1_000_000),
     .FPS(60)
 ) DIV_FPS (
     .clk(clk),
