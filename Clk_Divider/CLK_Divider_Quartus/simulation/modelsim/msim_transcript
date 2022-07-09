@@ -59,3 +59,5 @@
 #    Time: 5 us  Iteration: 0  Instance: /testbench
 # 1
 # Break in Module testbench at C:/Users/1matt/Desktop/Matthew_Webb/Coding/FPGA/Verilog_Modules/Clk_Divider/CLK_Divider_Quartus/../Clk_Divider_HZ_TB.v line 14
+# End time: 18:48:33 on Jul 03,2022, Elapsed time: 5:39:35
+# Errors: 0, Warnings: 0

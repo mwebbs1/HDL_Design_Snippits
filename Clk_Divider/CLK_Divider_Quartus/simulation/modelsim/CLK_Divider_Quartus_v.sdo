@@ -24,7 +24,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "Clk_Divider_Top")
-  (DATE "07/03/2022 18:43:55")
+  (DATE "07/09/2022 19:43:24")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition")
@@ -42,13 +42,11 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE DIV\|count\[2\].lecomb)
+    (INSTANCE DIV\|count\[1\].lecomb)
     (DELAY
       (ABSOLUTE
-        (PORT datab (784:784:784) (784:784:784))
-        (PORT datac (795:795:795) (795:795:795))
-        (PORT datad (799:799:799) (799:799:799))
-        (IOPATH datab regin (862:862:862) (862:862:862))
+        (PORT datac (823:823:823) (823:823:823))
+        (PORT datad (758:758:758) (758:758:758))
         (IOPATH datac regin (653:653:653) (653:653:653))
         (IOPATH datad regin (480:480:480) (480:480:480))
       )
@@ -56,7 +54,7 @@
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE DIV\|count\[2\].lereg)
+    (INSTANCE DIV\|count\[1\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1114:1114:1114) (1114:1114:1114))
@@ -75,9 +73,9 @@
     (INSTANCE DIV\|count\[0\].lecomb)
     (DELAY
       (ABSOLUTE
-        (PORT datab (796:796:796) (796:796:796))
-        (PORT datac (798:798:798) (798:798:798))
-        (PORT datad (782:782:782) (782:782:782))
+        (PORT datab (781:781:781) (781:781:781))
+        (PORT datac (817:817:817) (817:817:817))
+        (PORT datad (760:760:760) (760:760:760))
         (IOPATH datab regin (862:862:862) (862:862:862))
         (IOPATH datac regin (653:653:653) (653:653:653))
         (IOPATH datad regin (480:480:480) (480:480:480))
@@ -102,19 +100,21 @@
   )
   (CELL
     (CELLTYPE "maxii_asynch_lcell")
-    (INSTANCE DIV\|count\[1\].lecomb)
+    (INSTANCE DIV\|count\[2\].lecomb)
     (DELAY
       (ABSOLUTE
-        (PORT datab (787:787:787) (787:787:787))
-        (PORT datad (788:788:788) (788:788:788))
+        (PORT datab (792:792:792) (792:792:792))
+        (PORT datac (805:805:805) (805:805:805))
+        (PORT datad (763:763:763) (763:763:763))
         (IOPATH datab regin (862:862:862) (862:862:862))
+        (IOPATH datac regin (653:653:653) (653:653:653))
         (IOPATH datad regin (480:480:480) (480:480:480))
       )
     )
   )
   (CELL
     (CELLTYPE "maxii_lcell_register")
-    (INSTANCE DIV\|count\[1\].lereg)
+    (INSTANCE DIV\|count\[2\].lereg)
     (DELAY
       (ABSOLUTE
         (PORT aclr (1114:1114:1114) (1114:1114:1114))
@@ -133,8 +133,8 @@
     (INSTANCE DIV\|Equal1\~0.lecomb)
     (DELAY
       (ABSOLUTE
-        (PORT datab (790:790:790) (790:790:790))
-        (PORT datac (801:801:801) (801:801:801))
+        (PORT datab (1052:1052:1052) (1052:1052:1052))
+        (PORT datac (828:828:828) (828:828:828))
         (PORT datad (1414:1414:1414) (1414:1414:1414))
         (IOPATH datab combout (601:601:601) (601:601:601))
         (IOPATH datac combout (415:415:415) (415:415:415))

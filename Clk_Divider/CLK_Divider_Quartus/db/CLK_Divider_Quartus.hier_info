@@ -1,6 +1,6 @@
 |Clk_Divider_Top
 clk => clk.IN1
-pulse <= Clk_Divider_HZ:DIV.pulse
+pulse << Clk_Divider_HZ:DIV.pulse
 
 
 |Clk_Divider_Top|Clk_Divider_HZ:DIV

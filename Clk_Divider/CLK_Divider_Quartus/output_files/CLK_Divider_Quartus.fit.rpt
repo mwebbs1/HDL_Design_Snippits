@@ -1,5 +1,5 @@
 Fitter report for CLK_Divider_Quartus
-Sun Jul 03 18:43:50 2022
+Sat Jul 09 19:43:19 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -56,7 +56,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Sun Jul 03 18:43:50 2022       ;
+; Fitter Status         ; Successful - Sat Jul 09 19:43:19 2022       ;
 ; Quartus Prime Version ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name         ; CLK_Divider_Quartus                         ;
 ; Top-level Entity Name ; Clk_Divider_Top                             ;
@@ -399,11 +399,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Routing Resource Type ; Usage             ;
 +-----------------------+-------------------+
 ; C4s                   ; 0 / 784 ( 0 % )   ;
-; Direct links          ; 0 / 888 ( 0 % )   ;
+; Direct links          ; 1 / 888 ( < 1 % ) ;
 ; Global clocks         ; 1 / 4 ( 25 % )    ;
 ; LAB clocks            ; 1 / 32 ( 3 % )    ;
 ; LUT chains            ; 0 / 216 ( 0 % )   ;
-; Local interconnects   ; 1 / 888 ( < 1 % ) ;
+; Local interconnects   ; 2 / 888 ( < 1 % ) ;
 ; R4s                   ; 1 / 704 ( < 1 % ) ;
 +-----------------------+-------------------+
 
@@ -530,15 +530,15 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.07 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/Users/1matt/Desktop/Matthew_Webb/Coding/FPGA/Verilog_Modules/Clk_Divider/CLK_Divider_Quartus/output_files/CLK_Divider_Quartus.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5509 megabytes
-    Info: Processing ended: Sun Jul 03 18:43:50 2022
+    Info: Peak virtual memory: 5506 megabytes
+    Info: Processing ended: Sat Jul 09 19:43:19 2022
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 
 +----------------------------+

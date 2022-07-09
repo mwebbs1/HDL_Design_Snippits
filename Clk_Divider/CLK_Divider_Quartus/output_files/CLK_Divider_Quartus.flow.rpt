@@ -1,5 +1,5 @@
 Flow report for CLK_Divider_Quartus
-Sun Jul 03 18:43:55 2022
+Sat Jul 09 19:43:24 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Sun Jul 03 18:43:55 2022       ;
+; Flow Status           ; Successful - Sat Jul 09 19:43:24 2022       ;
 ; Quartus Prime Version ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name         ; CLK_Divider_Quartus                         ;
 ; Top-level Entity Name ; Clk_Divider_Top                             ;
@@ -59,7 +59,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/03/2022 18:43:40 ;
+; Start date & time ; 07/09/2022 19:43:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; CLK_Divider_Quartus ;
 +-------------------+---------------------+
@@ -70,7 +70,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------+---------------------------------+---------------------+-------------+----------------+
 ; Assignment Name                       ; Value                           ; Default Value       ; Entity Name ; Section Id     ;
 +---------------------------------------+---------------------------------+---------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                 ; 141812763035925.165683781906596 ; --                  ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                 ; 141812763035925.165735978819948 ; --                  ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME              ; NA                              ; --                  ; --          ; Clk_Divider_HZ ;
 ; EDA_DESIGN_INSTANCE_NAME              ; NA                              ; --                  ; --          ; testbench      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH  ; testbench                       ; --                  ; --          ; eda_simulation ;
@@ -98,12 +98,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4702 MB             ; 00:00:19                           ;
-; Fitter               ; 00:00:01     ; 1.0                     ; 5509 MB             ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4702 MB             ; 00:00:21                           ;
+; Fitter               ; 00:00:01     ; 1.0                     ; 5506 MB             ; 00:00:02                           ;
 ; Assembler            ; 00:00:01     ; 1.0                     ; 4648 MB             ; 00:00:00                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4667 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4611 MB             ; 00:00:01                           ;
-; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:22                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4667 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4610 MB             ; 00:00:01                           ;
+; Total                ; 00:00:14     ; --                      ; --                  ; 00:00:25                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "07/03/2022 18:43:55"
+// DATE "07/09/2022 19:43:24"
 
 // 
 // Device: Altera EPM240F100C4 Package FBGA100
@@ -67,7 +67,79 @@ maxii_io \clk~I (
 defparam \clk~I .operation_mode = "input";
 // synopsys translate_on
 
+// Location: LC_X7_Y2_N9
+maxii_lcell \DIV|count[1] (
+// Equation(s):
+// \DIV|count [1] = DFFEAS(((\DIV|count [0] $ (\DIV|count [1]))), GLOBAL(\clk~combout ), VCC, , , , , , )
+
+	.clk(\clk~combout ),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\DIV|count [0]),
+	.datad(\DIV|count [1]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\DIV|count [1]),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \DIV|count[1] .lut_mask = "0ff0";
+defparam \DIV|count[1] .operation_mode = "normal";
+defparam \DIV|count[1] .output_mode = "reg_only";
+defparam \DIV|count[1] .register_cascade_mode = "off";
+defparam \DIV|count[1] .sum_lutc_input = "datac";
+defparam \DIV|count[1] .synch_mode = "off";
+// synopsys translate_on
+
 // Location: LC_X7_Y2_N7
+maxii_lcell \DIV|count[0] (
+// Equation(s):
+// \DIV|count [0] = DFFEAS(((!\DIV|count [0] & ((\DIV|count [1]) # (!\DIV|count [2])))), GLOBAL(\clk~combout ), VCC, , , , , , )
+
+	.clk(\clk~combout ),
+	.dataa(vcc),
+	.datab(\DIV|count [0]),
+	.datac(\DIV|count [2]),
+	.datad(\DIV|count [1]),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\DIV|count [0]),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \DIV|count[0] .lut_mask = "3303";
+defparam \DIV|count[0] .operation_mode = "normal";
+defparam \DIV|count[0] .output_mode = "reg_only";
+defparam \DIV|count[0] .register_cascade_mode = "off";
+defparam \DIV|count[0] .sum_lutc_input = "datac";
+defparam \DIV|count[0] .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X7_Y2_N0
 maxii_lcell \DIV|count[2] (
 // Equation(s):
 // \DIV|count [2] = DFFEAS(((\DIV|count [0] & (\DIV|count [2] $ (\DIV|count [1]))) # (!\DIV|count [0] & (\DIV|count [2] & \DIV|count [1]))), GLOBAL(\clk~combout ), VCC, , , , , , )
@@ -103,88 +175,16 @@ defparam \DIV|count[2] .sum_lutc_input = "datac";
 defparam \DIV|count[2] .synch_mode = "off";
 // synopsys translate_on
 
-// Location: LC_X7_Y2_N9
-maxii_lcell \DIV|count[0] (
-// Equation(s):
-// \DIV|count [0] = DFFEAS(((!\DIV|count [0] & ((\DIV|count [1]) # (!\DIV|count [2])))), GLOBAL(\clk~combout ), VCC, , , , , , )
-
-	.clk(\clk~combout ),
-	.dataa(vcc),
-	.datab(\DIV|count [1]),
-	.datac(\DIV|count [2]),
-	.datad(\DIV|count [0]),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(),
-	.regout(\DIV|count [0]),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \DIV|count[0] .lut_mask = "00cf";
-defparam \DIV|count[0] .operation_mode = "normal";
-defparam \DIV|count[0] .output_mode = "reg_only";
-defparam \DIV|count[0] .register_cascade_mode = "off";
-defparam \DIV|count[0] .sum_lutc_input = "datac";
-defparam \DIV|count[0] .synch_mode = "off";
-// synopsys translate_on
-
-// Location: LC_X7_Y2_N2
-maxii_lcell \DIV|count[1] (
-// Equation(s):
-// \DIV|count [1] = DFFEAS((\DIV|count [0] $ (((\DIV|count [1])))), GLOBAL(\clk~combout ), VCC, , , , , , )
-
-	.clk(\clk~combout ),
-	.dataa(vcc),
-	.datab(\DIV|count [0]),
-	.datac(vcc),
-	.datad(\DIV|count [1]),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(),
-	.regout(\DIV|count [1]),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \DIV|count[1] .lut_mask = "33cc";
-defparam \DIV|count[1] .operation_mode = "normal";
-defparam \DIV|count[1] .output_mode = "reg_only";
-defparam \DIV|count[1] .register_cascade_mode = "off";
-defparam \DIV|count[1] .sum_lutc_input = "datac";
-defparam \DIV|count[1] .synch_mode = "off";
-// synopsys translate_on
-
 // Location: LC_X7_Y2_N3
 maxii_lcell \DIV|Equal1~0 (
 // Equation(s):
-// \DIV|Equal1~0_combout  = ((!\DIV|count [1] & (!\DIV|count [2] & !\DIV|count [0])))
+// \DIV|Equal1~0_combout  = ((!\DIV|count [2] & (!\DIV|count [0] & !\DIV|count [1])))
 
 	.clk(gnd),
 	.dataa(vcc),
-	.datab(\DIV|count [1]),
-	.datac(\DIV|count [2]),
-	.datad(\DIV|count [0]),
+	.datab(\DIV|count [2]),
+	.datac(\DIV|count [0]),
+	.datad(\DIV|count [1]),
 	.aclr(gnd),
 	.aload(gnd),
 	.sclr(gnd),
